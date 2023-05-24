@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.131" height="37.136" viewBox="0 0 37.131 37.136">
+  <defs>
+    <filter id="Icon_ionic-ios-search" x="0" y="0" width="37.131" height="37.136" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.361"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_ionic-ios-search)">
+    <path id="Icon_ionic-ios-search-2" data-name="Icon ionic-ios-search" d="M23.406,22.244l-5.321-5.371a7.583,7.583,0,1,0-1.151,1.166l5.286,5.336a.819.819,0,0,0,1.156.03A.824.824,0,0,0,23.406,22.244ZM12.127,18.1a5.987,5.987,0,1,1,4.235-1.754A5.95,5.95,0,0,1,12.127,18.1Z" transform="translate(4.5 1.51)" fill="#f6f6f6"/>
+  </g>
+</svg>

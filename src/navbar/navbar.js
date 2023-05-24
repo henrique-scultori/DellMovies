@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
+import Lupa from './lupa.svg'
 
 const NavBar = styled.nav`   
     height: 12vh;
@@ -27,12 +28,13 @@ export default function NavComponent (){
             <NavList>
                 <NavItem>Popular</NavItem>
                 <NavItem>Drama</NavItem>
-                <NavItem>Acao</NavItem>
+                <NavItem>Ação</NavItem>
                 <NavItem>Aventura</NavItem>
-                <NavItem>Comedia</NavItem>
+                <NavItem>Comédia</NavItem>
                 <NavItem>Crime</NavItem>
                 <NavItem>Fantasia</NavItem>
-                <NavItem>Familia</NavItem>
+                <NavItem>Família</NavItem>
+                <NavItem> <img src={Lupa} /> </NavItem>
             </NavList>
         </NavBar>
     )

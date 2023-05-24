@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react"
 import styled from "styled-components"
 import axios from 'axios'
+import imdb from './imdb.png'
 
 const ButtonAssistir = styled.button`
 width: 20vw;
@@ -64,7 +65,20 @@ color: #f2f2f2;
 font-family: Arial, Helvetica, sans-serif;
 
 `
+const ImgImdb = styled.img`
+width: 3rem;
+`
+const DivImg = styled.div`
+height: 3vh;
+display:flex;
+flex-direction: row;
 
+h3{
+    position: relative;
+    top: 4px;
+}
+
+`
 
 export default function Main (){
     const [filmes, setFilmes] = useState([])
@@ -99,7 +113,10 @@ export default function Main (){
                     <DivGradient>
                     <Div>
                         <h1>{item.title}</h1>
+                        <DivImg>
+                        <ImgImdb src={imdb} alt='Imdb Logo' />
                         <h3>{item.vote_average}</h3>
+                        </DivImg>
                         <h3>{item.release_date}</h3>
                         <h3>{item.overview}</h3>
                         <DivButton>

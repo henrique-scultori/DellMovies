@@ -3,15 +3,26 @@ import Slider from "react-slick";
 import axios from "axios";
 import styled from "styled-components";
 
+const Img = styled.img`
+width: 19rem;
+cursor:pointer;
+`
+
 const SliderBox = styled.section`
   height: 70vh;
-  padding: 1rem;
+  padding: 3rem;
   border: 2px white;
   display: flex;
   justify-content: center;
   align-items: center;
   background: black;
   color: #f2f2f2;
+
+  h2{
+    padding-top: 2rem;
+    font-size: 23px;
+  }
+
 `;
 
 export default function Carousel() {
@@ -34,7 +45,7 @@ export default function Carousel() {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 4
   };
 
@@ -45,10 +56,9 @@ export default function Carousel() {
       <Slider {...settings} style={{ width: "95%" }}>
         {filmes.map((item) => (
           <div>
-            <img
+            <Img
               src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
               alt={item.title}
-              style={{ width: "80%" }}
             />
             <h2>{item.title} </h2>
           </div>

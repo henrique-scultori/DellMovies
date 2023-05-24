@@ -3,6 +3,7 @@ import Header from "./header/header.js"
 import Carousel from './carousel/carousel.js'
 import Main from './main/main.js'
 import NavComponent from './navbar/navbar.js'
+import Filmes from './filmes/filmes.js'
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
@@ -22,6 +23,7 @@ export default function App (){
     <Main />
     <Carousel />
     <NavComponent />
+    <Filmes />
     </>
   )
 }

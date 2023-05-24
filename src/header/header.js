@@ -30,6 +30,7 @@ const ImgLupa = styled.img`
 const HeaderStyle = styled.header`
 
     position: fixed;
+    z-index: 1;
     background-color: rgba(108, 122, 137 / 1) ;
     backdrop-filter: blur(25px);
     display: flex;
@@ -64,12 +65,14 @@ const HeaderStyle = styled.header`
         font-size: 1.6rem;
         border: none;
         color: white;
-        background-color: #ffffff00
+        background-color: #ffffff00;
+
     }
 
     button: hover{
         border: none;
-        background-color: #747474;
+        background-color: #505050;
+        box-shadow: 0px 6px 6px #0000005C;
         cursor: pointer;
         color: #FFFFFF;
     }
